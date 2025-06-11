@@ -1,0 +1,180 @@
+a {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+body {
+    background-color: linear-gradient(magenta, blue);
+}
+table {
+    width: 100%;
+    border-radius: 8px;/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #374151;
+  font-size: 17px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  color: WHITE;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover, a:focus {
+  color: #111827;
+  outline: none;
+}
+h1 {
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 2rem 0 1rem 0;
+  color: #111827;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto 4rem auto;
+  padding: 0 1rem;
+  flex: 1 0 auto;
+}
+header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  z-index: 100;
+}
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #111827;
+  user-select:none;
+  cursor: default;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  font-weight: 600;
+  font-size: 1rem;
+  padding-bottom: 0.125rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+.nav-links a.active, .nav-links a:hover, .nav-links a:focus {
+  border-color: #111827;
+  color: #111827;
+  outline: none;
+}
+
+/* Cards */
+.card {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  color: #1f2937;
+}
+.card:hover, .card:focus {
+  transform: translateY(-3px);
+  outline: none;
+}
+.card-header {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  color: #2563eb;
+}
+.meta {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+.no-data {
+  font-style: italic;
+  color: #9ca3af;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Make text white for admin bookings table */
+table, th, td {
+  color: white;
+  padding: 24px 80px;
+  line-height: 1.8;
+  border: 1px solid #555;
+}
+
+.btn-submit {
+  font-weight: 100;
+  background-color: #111827;
+  color: white;
+  border: none;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: none;
+  justify-self: start;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select:none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+tr {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+    overflow: hidden;
+    background-color: azure;
+}
+th {
+    border: 1px solid #070707;
+    padding: 12px;
+    background-color: #000000c7;
+    color: white;
+}
+td {
+    border: 0.5px solid #111111;
+}
+h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+}
